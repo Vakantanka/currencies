@@ -1,8 +1,8 @@
-$primaryColor: #242d38;
-$secondaryColor: #efd592;
+$primaryColor: #666;
+$secondaryColor: #fff;
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $primaryColor;
     background-color: $primaryColor;
 }
@@ -16,10 +16,9 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
-    color: $secondaryColor;
-    background-color: $primaryColor;
-    border-bottom: 1px solid $secondaryColor;
+    height: 80px;
+    color: $primaryColor;
+    background-color: $secondaryColor;
 
     h1 {
         font-size: 36px;
@@ -29,14 +28,13 @@ header {
         text-transform: uppercase;
     }
 
-    @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 12px;
-        }    
+    button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
     }
-
     button span.menuIcon {
-        font-size: 24px;
+        font-size: 36px;
         margin: 12px;
     }
 }
@@ -45,76 +43,75 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 
-    #movies.container {
-        max-width: 1000px;
+    #currencies.container {
+        max-width: 1200px;
         margin: 120px auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 90px 20px;
+        gap: 60px;
         
         .card {
             position: relative;
             background-color: $secondaryColor;
             color: $primaryColor;
-            max-width: 400px;
+            max-width: 300px;
+            width: 300px;
+            box-shadow: (10px, 5px, 5px, rgba(0, 0, 0, 0.25));
+            padding: 40px;
             
-            .movieData {
-                padding: 40px;
-                height: 100%;
-            }
-            
-            h2.title {
-                font-size: 36px;
+            .title {
+                font-size: 18px;
                 font-weight: 400;
-                // min-height: 100px;
-                // margin-bottom: .5em;
-            }
-            
-            .index {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-                top: -20px;
-                right: 50%;
-                font-size: 24px;
-                color: $secondaryColor;
-                background-color: $primaryColor;
-                border: 1px solid $secondaryColor;
-                transform: translateX(50%);
             }
 
             .sub {
-                font-size: 18px;
-                font-weight: 400;
-                margin-bottom: 1em;
-                padding-bottom: 1em;
-                text-transform: uppercase;
-                border-bottom: 1px solid $primaryColor;
+                // font-size: 18px;
+                // font-weight: 400;
+                // margin-bottom: 1em;
+                // padding-bottom: 1em;
+                // text-transform: uppercase;
+                // border-bottom: 1px solid $primaryColor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 160px;
+                height: 160px;
+                font-size: 80px;
+                margin: 0 auto;
+                background-color: $primaryColor;
+                color: $secondaryColor;
+                border-radius: 50%;
             }
             
             .text {
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 700;
                 margin-bottom: 1em;
             }
 
             button {
                 position: absolute;
-                bottom: -30px;
-                left: 40px;
-                width: calc(100% - 80px);
-                height: 60px;
+                bottom: 0;
+                left: 0;
+                width: 160px;
+                height: 50px;
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: flex-start;
                 align-items: center;
-                background-color: $primaryColor;
-                color: $secondaryColor;
-                border: 1px solid $secondaryColor;
-                font-size: 14px;
+                background-color: $secondaryColor;
+                color: $primaryColor;
+
+                .buttonText {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .arrow {
+                    position: absolute;
+                    right: 0;
+                    font-size: 18px;
+                }
             }
 
             button:hover {
