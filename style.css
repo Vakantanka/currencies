@@ -44,13 +44,14 @@ header button span.menuIcon {
 }
 
 main {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 140px auto;
 }
 
 main #currencies.container {
   max-width: 1200px;
-  margin: 120px auto;
+  width: 100%;
+  margin: 80px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,11 +74,6 @@ main #currencies.container .card {
   padding: 40px;
 }
 
-main #currencies.container .card .title {
-  font-size: 18px;
-  font-weight: 400;
-}
-
 main #currencies.container .card .sub {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,16 +93,30 @@ main #currencies.container .card .sub {
   border-radius: 50%;
 }
 
+main #currencies.container .card .title {
+  margin: 2rem auto 0;
+  padding: .5em;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+main #currencies.container .card .title span {
+  padding: .5em 0;
+  border-bottom: 1px solid #666;
+}
+
 main #currencies.container .card .text {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 1em;
+  margin: .5em;
+  text-align: center;
 }
 
 main #currencies.container .card button {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -25px;
+  left: 70px;
   width: 160px;
   height: 50px;
   display: -webkit-box;
@@ -124,22 +134,27 @@ main #currencies.container .card button {
           align-items: center;
   background-color: #fff;
   color: #666;
+  border: 1px solid #666;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px, 5px, 5px, rgba(0, 0, 0, 0.25);
+          box-shadow: 10px, 5px, 5px, rgba(0, 0, 0, 0.25);
 }
 
 main #currencies.container .card button .buttonText {
   font-size: 14px;
   font-weight: 500;
+  margin-left: 25px;
 }
 
 main #currencies.container .card button .arrow {
   position: absolute;
-  right: 0;
-  font-size: 18px;
+  right: 5px;
+  font-size: 36px;
 }
 
 main #currencies.container .card button:hover {
-  background-color: #fff;
-  color: #666;
-  border-color: #666;
+  background-color: #666;
+  color: #fff;
+  border-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

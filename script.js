@@ -46,7 +46,7 @@ function loadEvent() {
     document.getElementById("currencies").insertAdjacentHTML("beforeend", currencies.map((currency, index) => 
         `<div class="card">
             <div class="sub">${currency.sub}</div>
-            <div class="title">${currency.title}</div>
+            <div class="title"><span>${currency.title}</span></div>
             <div class="text">${currency.text}</div>
             <button>
                 <span class="buttonText">Save</span>
